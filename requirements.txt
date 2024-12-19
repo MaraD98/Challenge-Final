@@ -1,0 +1,7 @@
+cohere
+python-dotenv
+chromadb
+fastapi
+uvicorn
+requests
+beautifulsoup4
