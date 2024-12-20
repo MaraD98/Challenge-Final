@@ -7,7 +7,7 @@ link1 = LinkMetadata(
     "2024-12-14"
 )
 
-# Enlace 2
+#Enlace 2
 link2 = LinkMetadata(
     "https://www.argentina.gob.ar/normativa/nacional/ley-27057-191815/texto", 
     "Enlace a la Ley 27057 sobre la protección de derechos laborales en Argentina", 

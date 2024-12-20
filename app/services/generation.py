@@ -1,4 +1,4 @@
-from app.routers.router import co
+from app.utils.utils import co
 
 #Construcción del Módulo de Generación
 def prompt_final(question, document):
@@ -9,8 +9,8 @@ def prompt_final(question, document):
                 
                 Tu tarea consiste en:
                 - Responder a las preguntas basandote en el contexto, sin añadir información no relevante.
-                - Dar una respues con un enfoque conciso y claro.
-                - Responder en primera persona siempre.
+                - Dar una respuesta con un enfoque conciso y claro, en menos de 1 parrafo.
+                - Responder en tercera persona siempre.
                 - Responde siempre en español, sin importar en qué idioma se haga la pregunta.
 
                 ###

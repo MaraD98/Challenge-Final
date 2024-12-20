@@ -54,5 +54,9 @@ def process_embeddings_link(link: LinkMetadata):
         print(f"Error al procesar el enlace: {str(e)}")
 
 
-# Exportar la colección
-__all__ = ["collection", "process_embeddings_link"]
+
+
+
+
+#Exportar la colección
+__all__ = ["collection", "client", "process_embeddings_link"]

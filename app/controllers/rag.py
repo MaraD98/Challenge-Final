@@ -1,5 +1,6 @@
-from services.retrieval import busqueda_en_db
-from services.generation import prompt_final
+from app.services.retrieval import busqueda_en_db
+from app.services.generation import prompt_final
+#from services.validation import get_cached_response
 
 #Integracion de los modulos
 def RAG_answer(question):
@@ -21,6 +22,12 @@ def RAG_answer(question):
 
         # Genera la respuesta final utilizando el documento relevante
         response = prompt_final(question,document)
-        return response 
+
+        # Validar y retornar respuesta cacheada
+        #return get_cached_response(question, response)
+        return response
     except Exception as e:
         return f"Hubo un error al procesar la pregunta: {str(e)}"
+    
+
+

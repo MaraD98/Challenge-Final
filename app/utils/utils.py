@@ -1,14 +1,13 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import cohere
-import os
 from dotenv import load_dotenv
+import os
+import hashlib
 
-
+# Inicialización del cliente los clientes
 load_dotenv(dotenv_path="app/.env")  # Load .env file
 api_key = os.getenv("COHERE_API_KEY")
-
 co = cohere.ClientV2()
-
 
 #Funcion que divide un contenido en chunks
 def split_text(content):
@@ -50,3 +49,31 @@ def get_embeddings(document):
     )
     return embbeding_response.embeddings.float
 
+
+# Diccionario global para almacenar respuestas
+response_cache = {}
+
+def get_cached_response(question, response):
+    """
+    Verifica si la pregunta ya tiene una respuesta cacheada.
+    Si no, almacena la respuesta generada.
+    
+    Args:
+        question (str): La pregunta del usuario.
+        response (str): La respuesta generada para la pregunta.
+    
+    Returns:
+        str: La respuesta cacheada o generada.
+    """
+    # Crear un hash de la pregunta
+    question_hash = hashlib.sha256(question.encode()).hexdigest()
+    
+    # Verificar si ya está en el cache
+    if question_hash in response_cache:
+        return response_cache[question_hash]
+    
+    # Si no está, guardar la respuesta en el cache
+    response_cache[question_hash] = response
+    return response
+
+__all__ = ["co"]
