@@ -1,3 +1,35 @@
+# I.A.: Inclusión Artificial  
+
+## Introducción  
+
+El proyecto **"I.A.: Inclusión Artificial"** tiene como propósito desarrollar un chat inteligente que brinde acceso rápido y preciso a información sobre los derechos de las personas con discapacidad. A través de tecnologías avanzadas como **RAG** (Retrieval-Augmented Generation), el sistema busca ser una herramienta confiable tanto para el ámbito personal como empresarial.  
+
+### Objetivo del Proyecto  
+
+Este sistema está diseñado para:  
+- **Empoderar a las personas con discapacidad**, sus familiares y cuidadores al proporcionar información clara y accesible sobre normativas, derechos y recursos disponibles.  
+- **Promover la inclusión en entornos empresariales**, ayudando a organizaciones a cumplir normativas legales, fomentar políticas inclusivas y mejorar la responsabilidad social.  
+
+### Aplicaciones  
+
+#### Ámbito Personal  
+El chat puede ser utilizado para:  
+- Consultar sobre derechos laborales, educativos y de acceso a servicios.  
+- Conocer beneficios y recursos específicos en la región.  
+- Facilitar el entendimiento de leyes y políticas inclusivas.  
+
+#### Ámbito Empresarial  
+En el contexto corporativo, puede ser utilizado para:  
+- Capacitación de empleados sobre normativas relacionadas con discapacidad.  
+- Resolución de consultas legales y administrativas.  
+- Diseño de estrategias inclusivas basadas en un entendimiento profundo de las leyes.  
+
+### Impacto  
+"I.A.: Inclusión Artificial" busca ser un puente entre la legislación y las necesidades reales, fomentando un entorno más justo, equitativo e inclusivo para todos.  
+
+---
+# **Especificaciones tecnicas**
+
 # Sistema de Carga, Búsqueda y Generación de Datos (RAG)
 
 Este proyecto implementa un sistema avanzado de carga, búsqueda y generación de datos utilizando tecnologías como **Cohere**, **ChromaDB** y **procesamiento de texto**. A continuación, se describen las funcionalidades principales y el entorno de configuración necesario.
